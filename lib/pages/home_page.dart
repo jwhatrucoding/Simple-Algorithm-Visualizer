@@ -62,6 +62,14 @@ class _HomePageState extends State<HomePage> {
                 );
               },
             ),
+            ListTile(
+              leading: Icon(Icons.sort),
+              title: Text('Coming soon'),
+              onTap: () {
+                //TODO: Navigate to new page
+                
+              },
+            ),
           ],
         ),
       ),

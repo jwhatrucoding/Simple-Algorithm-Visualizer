@@ -16,6 +16,7 @@ class _BubbleSortState extends State<BubbleSort>{
   List<int> numberArray = [0, 3, 5, 2, 7, 6, 9, 8, 1];
   String _displayedText = "Current Array: ";
 
+  // Methods
   // Bubble Sort Algorithm
   List<int> bubbleSort(List<int> inputList) {
     List<int> list = List.from(inputList);
@@ -32,6 +33,7 @@ class _BubbleSortState extends State<BubbleSort>{
     return list;
   }
 
+  // Sort
   void onPressedSort() {
     List<int> _resultOfSort = bubbleSort(numberArray);
     setState(() {
@@ -40,12 +42,15 @@ class _BubbleSortState extends State<BubbleSort>{
     });
   }
 
+  // Reset
   void onPressedReset() {
     setState(() {
       _displayedText = "Current Array: ";
       numberArray = List.from(originalArray); // Reset to original array
     });
   }
+
+  // TODO: Enter array value manually
 
   @override
   Widget build(BuildContext context) {
@@ -130,6 +135,7 @@ class _BubbleSortState extends State<BubbleSort>{
               ),
             ),
             SizedBox(height: 20),
+
             // Sort button
             ElevatedButton(
               onPressed: onPressedSort,
@@ -150,6 +156,7 @@ class _BubbleSortState extends State<BubbleSort>{
               ),
             ),
             SizedBox(height: 10),
+            
             // RESET button
             Align(
               alignment: Alignment.center,
