@@ -102,6 +102,7 @@ class _BubbleSortState extends State<BubbleSort>{
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(8),
                         ),
+                        // Display the number
                         child: Text(
                           "$number",
                           style: TextStyle(
@@ -125,6 +126,7 @@ class _BubbleSortState extends State<BubbleSort>{
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(color: Colors.blueGrey, width: 2),
               ),
+              // Display text + array
               child: Text(
                 _displayedText + numberArray.toString(),
                 textAlign: TextAlign.center,
@@ -156,7 +158,7 @@ class _BubbleSortState extends State<BubbleSort>{
               ),
             ),
             SizedBox(height: 10),
-            
+
             // RESET button
             Align(
               alignment: Alignment.center,
