@@ -77,6 +77,7 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(12.0),
+          // Greeting
           child: Text(
             "W E L C O M E\n\nThis app demonstrates different algorithms. To select one, check the menu in the upper left! Enjoy!",
             textAlign: TextAlign.center, // Centers the text
