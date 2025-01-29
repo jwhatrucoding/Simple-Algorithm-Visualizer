@@ -84,8 +84,8 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
-              letterSpacing: 4, // Adds spacing between letters
-              color: Colors.black, // Highlight the word "WELCOME"
+              letterSpacing: 4,
+              color: Colors.black,
             ),
           ),
         ),
